@@ -5,18 +5,19 @@
   
 
   
-  <title>NorthHuang&#39;s Blog</title>
+  <title>Laravel远层一对一新特性的学习 | NorthHuang&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="大码渣的博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="NorthHuang&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="根本问题不优化查询被称为 “N + 1” 问题。当我们在使用对象来表示查询时，可能在不知情的情况下使用了查询。想象一下，您收到了100个来自数据库的对象，并且每条记录都有1个关联的模型（即belongsTo）。使用ORM默认会产生101条查询; 对原始100条记录 进行一次查询，如果访问了模型对象上的相关数据，则对每条记录进行附加查询。在伪代码中，假设您要列出所有已发布帖子的发布作者。从一组帖子（">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Laravel远层一对一新特性的学习">
+<meta property="og:url" content="http://yoursite.com/2019/04/08/Laravel远层一对一新特性的学习/index.html">
 <meta property="og:site_name" content="NorthHuang&#39;s Blog">
-<meta property="og:description" content="大码渣的博客">
+<meta property="og:description" content="根本问题不优化查询被称为 “N + 1” 问题。当我们在使用对象来表示查询时，可能在不知情的情况下使用了查询。想象一下，您收到了100个来自数据库的对象，并且每条记录都有1个关联的模型（即belongsTo）。使用ORM默认会产生101条查询; 对原始100条记录 进行一次查询，如果访问了模型对象上的相关数据，则对每条记录进行附加查询。在伪代码中，假设您要列出所有已发布帖子的发布作者。从一组帖子（">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-04-08T02:17:21.617Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="NorthHuang&#39;s Blog">
-<meta name="twitter:description" content="大码渣的博客">
+<meta name="twitter:title" content="Laravel远层一对一新特性的学习">
+<meta name="twitter:description" content="根本问题不优化查询被称为 “N + 1” 问题。当我们在使用对象来表示查询时，可能在不知情的情况下使用了查询。想象一下，您收到了100个来自数据库的对象，并且每条记录都有1个关联的模型（即belongsTo）。使用ORM默认会产生101条查询; 对原始100条记录 进行一次查询，如果访问了模型对象上的相关数据，则对每条记录进行附加查询。在伪代码中，假设您要列出所有已发布帖子的发布作者。从一组帖子（">
   
     <link rel="alternate" href="/atom.xml" title="NorthHuang&#39;s Blog" type="application/atom+xml">
   
@@ -63,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Laravel远层一对一新特性的学习" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Laravel远层一对一新特性的学习" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/04/08/Laravel远层一对一新特性的学习/" class="article-date">
   <time datetime="2019-04-08T02:16:07.000Z" itemprop="datePublished">2019-04-08</time>
@@ -82,8 +81,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/08/Laravel远层一对一新特性的学习/">Laravel远层一对一新特性的学习</a>
+    <h1 class="article-title" itemprop="name">
+      Laravel远层一对一新特性的学习
     </h1>
   
 
@@ -108,108 +107,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-不占座微信小程序定位测试报告" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/04/01/不占座微信小程序定位测试报告/" class="article-date">
-  <time datetime="2019-04-01T05:57:52.000Z" itemprop="datePublished">2019-04-01</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/测试报告/">测试报告</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/01/不占座微信小程序定位测试报告/">不占座微信小程序定位测试报告</a>
-    </h1>
+    <a href="/2019/04/01/不占座微信小程序定位测试报告/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">不占座微信小程序定位测试报告</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="测试方法"><a href="#测试方法" class="headerlink" title="测试方法"></a>测试方法</h2><p>在后台将图书馆地址设置为上海鸿运大厦，本人也在鸿运大厦内。改变扫码上座最远距离的值，测试小程序是否允许上座学习，选出合适的扫码上座最远距离。</p>
-<h2 id="测试手机基本配置"><a href="#测试手机基本配置" class="headerlink" title="测试手机基本配置"></a>测试手机基本配置</h2><p>手机型号：OnePlus 5T<br>CPU：高通骁龙835（8核）<br>GPU：Adreno 540<br>RAM：6GB<br>ROM：64GB</p>
-<h2 id="测试过程"><a href="#测试过程" class="headerlink" title="测试过程"></a>测试过程</h2><p>开启：移动网络<br>手机在室内的定位偏差（定位来源高德地图）：不能定位<br>不能使用微信小程序，如美团外卖等<br><img src="https://upload-images.jianshu.io/upload_images/17041450-846f5ec6b518dbff.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="4G.jpg"></p>
-<p>开启：移动网络+卫星定位<br>手机在室内的定位偏差（定位来源高德地图）：350米左右<br>图书馆和自己同一位置：限制距离300米，200米，180米，160米可以学，150米不行<br><img src="https://upload-images.jianshu.io/upload_images/17041450-55924e8ec5946559.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="4G+gps.jpg"></p>
-<p>开启：WiFi（连接状态）<br>手机在室内的定位偏差（定位来源高德地图）：50米左右<br>不能使用微信小程序，如美团外卖等<br><img src="https://upload-images.jianshu.io/upload_images/17041450-c643913c4200f7ef.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wifi.jpg"></p>
-<p>开启：WiFi（未连接状态）+移动网络<br>手机在室内的定位偏差（定位来源高德地图）：定位失败<br>不能使用微信小程序，如美团外卖等<br><img src="https://upload-images.jianshu.io/upload_images/17041450-95068a17c122271a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WiFi断开+4G.jpg"></p>
-<p>开启：WiFi（连接状态）+卫星定位<br>手机在室内的定位偏差（定位来源高德地图）：20米左右<br>图书馆和自己同一位置：限制距离1000米，500米可以学，50米，80米，100米，160米，300米，400米不行<br><img src="https://upload-images.jianshu.io/upload_images/17041450-a442fb26dd4e1c40.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="wifi+gps.jpg"></p>
-<h2 id="测试结论"><a href="#测试结论" class="headerlink" title="测试结论"></a>测试结论</h2><ul>
-<li>只有开启卫星定位才可以使用微信小程序（不占座和美团外卖小程序）。</li>
-<li>在室内，卫星定位的强度较弱，WiFi+卫星定位比移动网络+卫星定位更准确，但是扫码上座最远距离需要调到500米，移动网络+卫星定位明显不如WiFi+卫星定位准确，扫码上座最远距离却只需要160米。</li>
-<li>综上所述，考虑到国内最大的图书馆（厦门大学图书馆）是12万平方米左右，长120米左右，宽220米左右，而且使用WiFi和移动网络的用户都会存在（即最大误差为500米），扫码上座最远距离设置为1000米以内可以适用于大部分学校。</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/04/01/不占座微信小程序定位测试报告/" data-id="cju7qaqol0003h8o552yqifz1" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/03/29/hello-world/" class="article-date">
-  <time datetime="2019-03-29T07:26:45.619Z" itemprop="datePublished">2019-03-29</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/29/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/29/hello-world/" data-id="cju7qaqog0001h8o5soraj963" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
